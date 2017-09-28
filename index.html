@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Agenda Web</title>
+<link rel="stylesheet" href="css/bootstrap.css" media="all" />
+<link rel="stylesheet" href="css/bootstrap-responsive.css" media="all" />
+<link rel="stylesheet" href="css/miestilo.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+$('.dropdown-toggle').dropdown();
+}
+);
+</script>
+
+<link href="skin/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function (event) {
+			$(this).jPlayer("setMedia", {
+				oga:"http://cess-Aspire-V5-472G:8000/airtime_128"
+			});
+		},
+		swfPath: "http://airtime.sourcefabric.org",
+		supplied: "oga",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+
+
+<div class="container" id="general">
+<div id="encabezado"class="row">
+
+<div class="span4" id="logo">
+<img SRC=img/logo.png >
+</div>
+
+<div id="menu" class="span8">
+<ul class="nav nav-pills">
+<li class="active" style="width:150px"><a href="index.html">Inicio</a></li>
+<li class="active" style="width:150px"><a href="nosotros.html">Nosotros</a></li>
+<li class=""><a style="background:#CEECF5"href="calendario.html">Calendario</a></li>
+<li class="" ><a href="contacto.html" style="background:#CEECF5">Contacto</a></li>
+
+</ul>
+
+</div>
+</div>
+<div id="cuerpo" class="row">
+
+<div id="izquierda" class="span4">
+<h3>Próximo Programa</h3>
+<ul class="nav nav-tabs nav-stacked">
+<li class="active">
+<p>Titulo</p>
+<p>Locutor</p>
+<p>Hora Inicio</p>
+<p>Descripción</p>
+<ul class="nav nav-list"><br/>
+</div>
+<div id="derecha"class="span7">
+<br/>
+<h1>Bienvenidos a nuestra Agenda Radial UCT</h1>
+<p>
+Play para reproducir
+</p>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+		<div id="jp_container_1" class="jp-audio-stream">
+        <div class="label">Airtime UCTRadio! 104.5 FM</div>
+			<div class="jp-type-single">
+				<div class="jp-gui jp-interface">
+				
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+
+				<div class="jp-no-solution">
+					<span>Actualización Requerida</span>
+					Para reproducir los medios de comunicación, deberá actualizar su navegador a una versión reciente o actualizar su <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+ 		 </div>
+		</div>
+</div>
+
+</div>
+<div id=""class="row">
+
+<div id="footer" class="span12">
+<span>Ingeniería Civil Informática Universidad Católica de Temuco</span><br/><b>Taller Integración IV: Carlos Soto - Benjamín Navarrete</b>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>

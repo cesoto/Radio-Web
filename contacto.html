@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Agenda Web</title>
+	</head>
+<link rel="stylesheet" href="css/bootstrap.css" media="all" />
+<link rel="stylesheet" href="css/bootstrap-responsive.css" media="all" />
+<link rel="stylesheet" href="css/miestilo.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+$('.dropdown-toggle').dropdown();
+}
+);
+</script>
+<body>
+
+
+<div class="container" id="general">
+<div id="encabezado"class="row">
+
+<div class="span4" id="logo">
+<img SRC=img/logo.png >
+</div>
+
+<div id="menu" class="span8">
+<ul class="nav nav-pills">
+<li class="active" style="width:150px"><a href="index.html">Inicio</a></li>
+<li class="active" style="width:150px"><a href="nosotros.html">Nosotros</a></li>
+<li class=""><a style="background:#CEECF5"href="calendario.html">Calendario</a></li>
+<li class="" ><a href="contacto.html" style="background:#CEECF5">Contacto</a></li>
+
+</ul>
+
+</div>
+</div>
+<div id="cuerpo" class="row">
+
+<<div id="izquierda" class="span4">
+<h3>Próximo Programa</h3>
+<ul class="nav nav-tabs nav-stacked">
+<li class="active">
+<p>Titulo</p>
+<p>Locutor</p>
+<p>Hora Inicio</p>
+<p>Descripción</p>
+<ul class="nav nav-list"><br/>
+</div>
+
+<div id="derecha"class="span7">
+<br/>
+<h1>Formulario de sugerencias </h1>
+<form id="contact-form" class="contact" name="contact-form" method="post" action="enviar.php">
+<div class="form-group">
+<input type="text" name="nombre" class="form-control name-field" required="required" placeholder="Nombre">
+</div>
+<div class="form-group">
+<input type="email" name="email" class="form-control name-field" required="required" placeholder="Email">
+</div>
+<div class="form-group">
+<textarea name="mensaje" id="message"  required="required" class="form-control" rows="3" placeholder="Sugerencia"></textarea>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary">Enviar</button>
+</div>
+
+</form>  
+ 
+</div>
+
+</div>
+<div id=""class="row">
+
+<div id="footer" class="span12">
+<span>Ingeniería Civil Informática Universidad Católica de Temuco</span><br/><b>Taller Integración IV: Carlos Soto - Benjamín Navarrete</b>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>
